@@ -15,3 +15,7 @@ FROM Person.Person as ppe
 -- exercise 02: return all names distincts of job title in HumanResources.Employee
 SELECT distinct he.JobTitle as 'Cargo' -- using clausule "distinct"
 FROM HumanResources.Employee as he
+
+-- exercise 03: return all products in table Production.Product
+SELECT ppro.ProductNumber as 'Numero produto', ppro.Name as 'Nome do produto'
+FROM Production.Product as ppro
