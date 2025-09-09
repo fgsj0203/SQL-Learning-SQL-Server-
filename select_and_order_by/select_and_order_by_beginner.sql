@@ -33,3 +33,7 @@ WHERE ppro.Color = 'Black'
 -- exercise 06: return clients in table Sales.Customer
 SELECT sc.CustomerID as 'ID do cliente', sc.PersonID as 'ID Pessoal'
 FROM Sales.Customer as sc
+
+-- exercise 07: return all address of table Person.Address
+SELECT pad.AddressLine1 as 'Endereco principal', pad.City as 'Cidade', pad.PostalCode as 'CEP'
+FROM Person.[Address] as pad
