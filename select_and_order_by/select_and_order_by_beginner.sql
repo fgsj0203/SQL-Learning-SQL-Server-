@@ -42,3 +42,7 @@ FROM Person.[Address] as pad
 SELECT *
 FROM HumanResources.Employee as he
 WHERE YEAR(he.HireDate) = 2009
+
+-- exercise 09: return all departments in table HumanResources.Department
+SELECT hde.Name as 'Nome do departamento'
+FROM HumanResources.Department as hde
