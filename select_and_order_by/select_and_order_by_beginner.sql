@@ -37,3 +37,8 @@ FROM Sales.Customer as sc
 -- exercise 07: return all address of table Person.Address
 SELECT pad.AddressLine1 as 'Endereco principal', pad.City as 'Cidade', pad.PostalCode as 'CEP'
 FROM Person.[Address] as pad
+
+-- exercise 08: return all employee if signed contract in 2009
+SELECT *
+FROM HumanResources.Employee as he
+WHERE YEAR(he.HireDate) = 2009
