@@ -46,3 +46,7 @@ WHERE YEAR(he.HireDate) = 2009
 -- exercise 09: return all departments in table HumanResources.Department
 SELECT hde.Name as 'Nome do departamento'
 FROM HumanResources.Department as hde
+
+-- exercise 10: Return all shifts in table HumanResource.Shift
+SELECT hs.Name as 'Nome', hs.StartTime as 'Inicio do turno', hs.EndTime as 'Fim do turno'
+FROM HumanResources.Shift as hs
