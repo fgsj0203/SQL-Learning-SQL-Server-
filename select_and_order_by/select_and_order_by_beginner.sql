@@ -24,3 +24,8 @@ FROM Production.Product as ppro
 SELECT *
 FROM Production.Product as ppro
 WHERE ppro.ListPrice < 1000
+
+-- exercise 05: return all products with color is black
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.Color = 'Black'
