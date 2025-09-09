@@ -29,3 +29,7 @@ WHERE ppro.ListPrice < 1000
 SELECT *
 FROM Production.Product as ppro
 WHERE ppro.Color = 'Black'
+
+-- exercise 06: return clients in table Sales.Customer
+SELECT sc.CustomerID as 'ID do cliente', sc.PersonID as 'ID Pessoal'
+FROM Sales.Customer as sc
