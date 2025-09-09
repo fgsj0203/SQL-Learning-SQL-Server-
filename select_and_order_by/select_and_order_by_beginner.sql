@@ -50,3 +50,7 @@ FROM HumanResources.Department as hde
 -- exercise 10: Return all shifts in table HumanResource.Shift
 SELECT hs.Name as 'Nome', hs.StartTime as 'Inicio do turno', hs.EndTime as 'Fim do turno'
 FROM HumanResources.Shift as hs
+
+-- exercise 11: return all territories of sales (Name, Group) of table Sales.SalesTerritory
+SELECT ssa.Name as 'Nome do territorio', ssa.[Group] as 'Nome do grupo territorial'
+FROM Sales.SalesTerritory as ssa
