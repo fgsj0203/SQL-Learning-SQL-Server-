@@ -19,3 +19,8 @@ FROM HumanResources.Employee as he
 -- exercise 03: return all products in table Production.Product
 SELECT ppro.ProductNumber as 'Numero produto', ppro.Name as 'Nome do produto'
 FROM Production.Product as ppro
+
+-- exercise 04: return all products with price smaller 1000
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.ListPrice < 1000
