@@ -65,3 +65,11 @@ SELECT *
 FROM Production.Product as ppro
 WHERE ppro.Weight > 500
 
+-- exercise 14: return products a started sales in year 2012
+SELECT *
+FROM Production.Product as ppro
+WHERE YEAR(ppro.SellStartDate) = 2012
+
+
+
+
