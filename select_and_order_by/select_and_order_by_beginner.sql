@@ -131,3 +131,8 @@ ORDER BY ppro.ListPrice DESC
 SELECT *
 FROM Production.Product as ppro
 WHERE ppro.ListPrice BETWEEN 500 and 1000
+
+-- exercise 28: return products in column "ProductNumber" started "FR"
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.ProductNumber LIKE 'FR%'
