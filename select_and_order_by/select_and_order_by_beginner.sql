@@ -107,3 +107,8 @@ ORDER BY ssoh.TotalDue DESC
 SELECT sc.[Name] as 'Nome moeda', sc.CurrencyCode as 'Codigo moeda'
 FROM Sales.Currency as sc
 ORDER BY sc.[Name] ASC -- Ordering name based in name coin 
+
+-- exercise 23: return cities distinct in table "Person.Address"
+SELECT DISTINCT (pad.City)
+FROM Person.Address as pad
+ORDER BY pad.City ASC -- Ordering names of cities in order ascendent 
