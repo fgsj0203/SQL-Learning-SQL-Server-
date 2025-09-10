@@ -126,3 +126,8 @@ WHERE ppro.Name LIKE '%Mountain%'
 SELECT TOP 5 *
 FROM Production.Product as ppro
 ORDER BY ppro.ListPrice DESC
+
+-- exercise 27: return products of column "ListPrice" a value between 500 and 1000
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.ListPrice BETWEEN 500 and 1000
