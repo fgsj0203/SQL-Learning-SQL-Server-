@@ -136,3 +136,8 @@ WHERE ppro.ListPrice BETWEEN 500 and 1000
 SELECT *
 FROM Production.Product as ppro
 WHERE ppro.ProductNumber LIKE 'FR%'
+
+-- exercise 29: return products a sales is size "L"
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.Class = 'L'
