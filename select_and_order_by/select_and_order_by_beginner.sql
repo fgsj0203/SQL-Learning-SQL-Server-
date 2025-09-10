@@ -54,3 +54,12 @@ FROM HumanResources.Shift as hs
 -- exercise 11: return all territories of sales (Name, Group) of table Sales.SalesTerritory
 SELECT ssa.Name as 'Nome do territorio', ssa.[Group] as 'Nome do grupo territorial'
 FROM Sales.SalesTerritory as ssa
+
+-- exercise 12: return all provider a contain word "bike"
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.Name LIKE '%Bike%'
+
+
+
+
