@@ -93,3 +93,9 @@ SELECT *
 FROM Production.Product as ppro
 WHERE ppro.DaysToManufacture = 0
 
+-- exercise 20: return products in order decrescent in based a value of column "ListPrice" 
+SELECT *
+FROM Production.Product as ppro
+ORDER BY ppro.ListPrice DESC
+
+
