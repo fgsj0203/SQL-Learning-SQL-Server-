@@ -83,3 +83,8 @@ SELECT *
 FROM Person.Person as ppe
 WHERE ppe.MiddleName LIKE 'S%'
 
+-- exercise 18: return order sales of Freight is bigger 100
+SELECT *
+FROM Sales.SalesOrderHeader as ssoh
+WHERE ssoh.Freight > 100
+
