@@ -103,7 +103,7 @@ SELECT TOP 10 *
 FROM Sales.SalesOrderHeader as ssoh 
 ORDER BY ssoh.TotalDue DESC
 
--- exercise 22: return all coins (Name, CurrencyCode)in table "Sales.Currency"
+-- exercise 22: return all coins (Name, CurrencyCode) in table "Sales.Currency"
 SELECT sc.[Name] as 'Nome moeda', sc.CurrencyCode as 'Codigo moeda'
 FROM Sales.Currency as sc
 ORDER BY sc.[Name] ASC -- Ordering name based in name coin 
