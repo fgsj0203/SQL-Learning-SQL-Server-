@@ -70,6 +70,6 @@ SELECT *
 FROM Production.Product as ppro
 WHERE YEAR(ppro.SellStartDate) = 2012
 
-
-
-
+-- exercise 15: return methods of send in table Purchasing.ShipMethod
+SELECT psh.Name as 'Nome metodo'
+FROM Purchasing.ShipMethod as psh
