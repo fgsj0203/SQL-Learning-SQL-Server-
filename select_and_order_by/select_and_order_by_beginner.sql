@@ -98,4 +98,7 @@ SELECT *
 FROM Production.Product as ppro
 ORDER BY ppro.ListPrice DESC
 
-
+-- exercise 21: return a first ten values order based in column "TotalDue" and value is bigger
+SELECT TOP 10 *
+FROM Sales.SalesOrderHeader as ssoh 
+ORDER BY ssoh.TotalDue DESC
