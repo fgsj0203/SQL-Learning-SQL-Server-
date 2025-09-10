@@ -112,3 +112,7 @@ ORDER BY sc.[Name] ASC -- Ordering name based in name coin
 SELECT DISTINCT (pad.City)
 FROM Person.Address as pad
 ORDER BY pad.City ASC -- Ordering names of cities in order ascendent 
+
+-- exercise 24: return names and middlenames in uppercase of table "Person.Person"
+SELECT UPPER (ppe.FirstName) as 'Primeiro Nome', UPPER (ppe.MiddleName) as 'Nome meio' -- Using clausule "UPPER (table + column)"
+FROM Person.Person as ppe
