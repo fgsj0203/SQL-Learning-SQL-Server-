@@ -88,3 +88,8 @@ SELECT *
 FROM Sales.SalesOrderHeader as ssoh
 WHERE ssoh.Freight > 100
 
+-- exercise 19: return products in "DaysToManufacture" is equal a 0
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.DaysToManufacture = 0
+
