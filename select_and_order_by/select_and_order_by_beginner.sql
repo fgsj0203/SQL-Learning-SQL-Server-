@@ -141,3 +141,8 @@ WHERE ppro.ProductNumber LIKE 'FR%'
 SELECT *
 FROM Production.Product as ppro
 WHERE ppro.Class = 'L'
+
+-- exercise 30: return products of name have size 10 characters
+SELECT *
+FROM Production.Product as ppro
+WHERE LEN(ppro.[Name]) = 10
