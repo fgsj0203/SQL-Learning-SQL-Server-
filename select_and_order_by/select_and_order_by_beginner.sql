@@ -60,6 +60,8 @@ SELECT *
 FROM Production.Product as ppro
 WHERE ppro.Name LIKE '%Bike%'
 
-
-
+-- exercise 13: return products with value weight is bigger 500
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.Weight > 500
 
