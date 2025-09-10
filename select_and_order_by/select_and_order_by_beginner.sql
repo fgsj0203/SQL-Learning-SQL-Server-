@@ -77,3 +77,9 @@ FROM Purchasing.ShipMethod as psh
 -- exercise 16: return types address in column (Name) Person.AddressType
 SELECT pad.[Name] as 'Tipos de endereco'
 FROM Person.AddressType as pad 
+
+-- exercise 17: return employee if start middle name a letter "s"
+SELECT *
+FROM Person.Person as ppe
+WHERE ppe.MiddleName LIKE 'S%'
+
