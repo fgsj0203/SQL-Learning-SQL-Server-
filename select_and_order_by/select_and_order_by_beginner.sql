@@ -121,3 +121,8 @@ FROM Person.Person as ppe
 SELECT *
 FROM Production.Product as ppro
 WHERE ppro.Name LIKE '%Mountain%'
+
+-- exercise 26: return five products a bigger value in column (ListPrice)
+SELECT TOP 5 *
+FROM Production.Product as ppro
+ORDER BY ppro.ListPrice DESC
