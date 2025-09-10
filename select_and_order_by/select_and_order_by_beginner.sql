@@ -73,3 +73,7 @@ WHERE YEAR(ppro.SellStartDate) = 2012
 -- exercise 15: return methods of send in table Purchasing.ShipMethod
 SELECT psh.Name as 'Nome metodo'
 FROM Purchasing.ShipMethod as psh
+
+-- exercise 16: return types address in column (Name) Person.AddressType
+SELECT pad.[Name] as 'Tipos de endereco'
+FROM Person.AddressType as pad 
