@@ -116,3 +116,8 @@ ORDER BY pad.City ASC -- Ordering names of cities in order ascendent
 -- exercise 24: return names and middlenames in uppercase of table "Person.Person"
 SELECT UPPER (ppe.FirstName) as 'Primeiro Nome', UPPER (ppe.MiddleName) as 'Nome meio' -- Using clausule "UPPER (table + column)"
 FROM Person.Person as ppe
+
+-- exercise 25: return products a name contain word "Mountain"
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.Name LIKE '%Mountain%'
