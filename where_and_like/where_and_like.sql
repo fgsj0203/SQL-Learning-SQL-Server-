@@ -42,3 +42,8 @@ WHERE pad.City LIKE '%Fort%'
 SELECT *
 FROM Production.Product as ppro
 WHERE ppro.StandardCost < 10
+
+-- exercise 08: return orders a value in column "OrderDate" is month december
+SELECT *
+FROM Sales.SalesOrderHeader as ssa
+WHERE MONTH(ssa.OrderDate) = 12
