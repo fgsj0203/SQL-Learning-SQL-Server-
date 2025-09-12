@@ -82,3 +82,8 @@ WHERE (ssa.SalesOrderID % 2 = 0)
 SELECT TOP 1 *
 FROM Production.Product as ppro
 ORDER BY ppro.ListPrice ASC
+
+-- exercise 16: return products with value in column "ListPrice" in between 300 and 500 and color is "Red"
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.ListPrice between 100 and 300 and (ppro.Color = 'Red') 
