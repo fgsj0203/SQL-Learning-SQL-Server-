@@ -8,3 +8,7 @@ Description: file with exercises beginner with clausules "WHERE and LIKE"
 Database: AdventureWorks2022
 */
 
+-- exercise 01: return all job title a start word "Manager"
+SELECT *
+FROM HumanResources.Employee as he
+WHERE he.JobTitle LIKE '%Manager'
