@@ -12,3 +12,8 @@ Database: AdventureWorks2022
 SELECT *
 FROM HumanResources.Employee as he
 WHERE he.JobTitle LIKE '%Manager'
+
+-- exercise 02: return products with "SafetyStockLevel" is value smaller 500
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.SafetyStockLevel < 500
