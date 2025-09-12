@@ -52,3 +52,8 @@ WHERE MONTH(ssa.OrderDate) = 12
 SELECT *
 FROM Production.Product as ppro
 WHERE ppro.WeightUnitMeasureCode IS NOT NULL
+
+-- exercise 10: return clients with AccountNumber is started "AW"
+SELECT *
+FROM Sales.Customer as sc
+WHERE sc.AccountNumber LIKE 'AW%'
