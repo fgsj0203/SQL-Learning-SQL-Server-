@@ -1,0 +1,21 @@
+Mostre nomes e precos de lista arredondados para o inteiro mais proximo.
+
+Mostre nomes e sobrenomes concatenados em uma coluna chamada FullName.
+
+Liste produtos cujo preco e maior que a media de todos os produtos.
+
+Liste produtos com preco igual a 0.
+
+Mostre ordens cujo TotalDue seja menor que 500.
+
+Liste produtos cujo Name contenha 'Touring'.
+
+Mostre nomes e sobrenomes ordenados pelo sobrenome em ordem decrescente.
+
+Mostre os 20 pedidos mais recentes.
+
+Liste o preco medio de venda por produto.
+
+Mostre os 3 produtos mais vendidos em quantidade.
+
+Liste os 3 clientes com maior gasto total.
