@@ -47,3 +47,8 @@ WHERE ppro.StandardCost < 10
 SELECT *
 FROM Sales.SalesOrderHeader as ssa
 WHERE MONTH(ssa.OrderDate) = 12
+
+-- exercise 09: return all products of weight column is not null
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.WeightUnitMeasureCode IS NOT NULL
