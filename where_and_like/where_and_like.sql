@@ -17,3 +17,8 @@ WHERE he.JobTitle LIKE '%Manager'
 SELECT *
 FROM Production.Product as ppro
 WHERE ppro.SafetyStockLevel < 500
+
+-- exercise 03: return all territories is have group "North America"
+SELECT *
+FROM Sales.SalesTerritory as ssa
+WHERE ssa.[Group] = 'North America'
