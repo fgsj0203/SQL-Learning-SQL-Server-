@@ -11,3 +11,8 @@ Database: AdventureWorks2022
 -- exercise 01: return names and price list round for number integer
 SELECT ppro.Name as 'Nome do produto', ROUND (ppro.ListPrice, 0) as 'Valor arredondado'
 FROM Production.Product as ppro
+-- WHERE ppro.ListPrice != 0 (if return all values different of zero)
+
+-- exercise 02: return name and last name concatenate in new column called FullName
+SELECT ppe.FirstName + ' ' + ppe.LastName as 'Nome Completo'
+FROM Person.Person as ppe
