@@ -72,3 +72,8 @@ WHERE ppro.Weight IS NULL
 SELECT *
 FROM Sales.Currency as sc
 WHERE sc.[Name] NOT LIKE 'U%'
+
+-- exercise 14: return orders of column "SalesOrder" is pair
+SELECT *
+FROM Sales.SalesOrderHeader as ssa
+WHERE (ssa.SalesOrderID % 2 = 0)
