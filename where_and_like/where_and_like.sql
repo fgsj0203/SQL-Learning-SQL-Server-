@@ -97,3 +97,5 @@ WHERE ssa.Status = 5
 SELECT *
 FROM Production.Product as ppro
 WHERE ppro.Name LIKE '%a%a%'
+
+
