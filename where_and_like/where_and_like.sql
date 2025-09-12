@@ -57,3 +57,8 @@ WHERE ppro.WeightUnitMeasureCode IS NOT NULL
 SELECT *
 FROM Sales.Customer as sc
 WHERE sc.AccountNumber LIKE 'AW%'
+
+-- exercise 11: return products with column "SellEndDate" is after year 2013
+SELECT *
+FROM Production.Product as ppro
+WHERE YEAR(ppro.SellEndDate) > 2013
