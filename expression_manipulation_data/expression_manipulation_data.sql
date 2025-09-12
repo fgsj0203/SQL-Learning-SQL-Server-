@@ -16,3 +16,10 @@ FROM Production.Product as ppro
 -- exercise 02: return name and last name concatenate in new column called FullName
 SELECT ppe.FirstName + ' ' + ppe.LastName as 'Nome Completo'
 FROM Person.Person as ppe
+
+-- exercise 03: return products of price is bigger value average
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.ListPrice > 
+(SELECT AVG(ppro.ListPrice) FROM Production.Product as ppro)
+ORDER BY ppro.ListPrice DESC -- Values in order decrescent
