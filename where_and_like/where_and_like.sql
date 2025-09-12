@@ -87,3 +87,8 @@ ORDER BY ppro.ListPrice ASC
 SELECT *
 FROM Production.Product as ppro
 WHERE ppro.ListPrice between 100 and 300 and (ppro.Color = 'Red') 
+
+-- exercise 17: return orders with status value equal 5
+SELECT *
+FROM Sales.SalesOrderHeader as ssa
+WHERE ssa.Status = 5
