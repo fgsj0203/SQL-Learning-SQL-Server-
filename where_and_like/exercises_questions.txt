@@ -2,7 +2,7 @@ Exercícios utilizando cláusulas WHERE e LIKE
 
 Mostre todos os cargos que terminam com “Manager”.
 
-Liste produtos cujo SafetyStockLevel seja menor que 500.
+Liste produtos cujo SafetyStockLevel seja menor que 500. 
 
 Liste todos os territórios que pertencem ao grupo 'North America'.
 

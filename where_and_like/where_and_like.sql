@@ -23,8 +23,12 @@ SELECT *
 FROM Sales.SalesTerritory as ssa
 WHERE ssa.[Group] = 'North America'
 
---exercise 04: return products with value "makeFlag" = 1
+-- exercise 04: return products with value "makeFlag" = 1
 SELECT *
 FROM Production.Product as ppro
 WHERE ppro.MakeFlag = 1
 
+-- exercise 05: return all products is value in ReorderPoint is equal or bigger 750
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.ReorderPoint >= 750
