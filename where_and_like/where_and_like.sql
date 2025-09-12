@@ -67,3 +67,8 @@ WHERE YEAR(ppro.SellEndDate) > 2013
 SELECT *
 FROM Production.Product as ppro
 WHERE ppro.Weight IS NULL
+
+-- exercise 13: return names of coin not started a letter "U"
+SELECT *
+FROM Sales.Currency as sc
+WHERE sc.[Name] NOT LIKE 'U%'
