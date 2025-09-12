@@ -62,3 +62,8 @@ WHERE sc.AccountNumber LIKE 'AW%'
 SELECT *
 FROM Production.Product as ppro
 WHERE YEAR(ppro.SellEndDate) > 2013
+
+-- exercise 12: return products with values in column Weight is null
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.Weight IS NULL
