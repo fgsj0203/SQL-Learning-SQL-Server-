@@ -1,0 +1,39 @@
+Exercícios utilizando cláusulas WHERE e LIKE
+
+Mostre todos os cargos que terminam com “Manager”.
+
+Liste produtos cujo SafetyStockLevel seja menor que 500.
+
+Liste todos os territórios que pertencem ao grupo 'North America'.
+
+Mostre produtos com MakeFlag = 1.
+
+Liste todos os produtos cujo ReorderPoint seja maior ou igual a 750.
+
+Mostre endereços cujo City contenha “Fort”.
+
+Liste produtos com StandardCost inferior a 10.
+
+Mostre ordens cujo OrderDate seja no mês de dezembro.
+
+Liste produtos que são vendidos em peso (WeightUnitMeasureCode não nulo).
+
+Mostre clientes com AccountNumber começando por 'AW'.
+
+Mostre produtos cujo SellEndDate seja posterior a 2013.
+
+Liste produtos cuja coluna Weight seja nula.
+
+Mostre os nomes das moedas que não começam com a letra “U”.
+
+Liste ordens cujo SalesOrderID seja par.
+
+Mostre o produto mais barato.
+
+Liste produtos cujo ListPrice esteja entre 100 e 300 e Color seja 'Red'.
+
+Liste ordens com Status igual a 5.
+
+Liste produtos cujo nome contenha ao menos duas letras “a”.
+
+Liste produtos cujo preço de lista seja múltiplo de 100.
