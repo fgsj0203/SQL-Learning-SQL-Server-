@@ -32,3 +32,8 @@ WHERE ppro.MakeFlag = 1
 SELECT *
 FROM Production.Product as ppro
 WHERE ppro.ReorderPoint >= 750
+
+-- exercise 06: return all address of city contain word "Fort"
+SELECT *
+FROM Person.[Address] as pad
+WHERE pad.City LIKE '%Fort%'
