@@ -37,3 +37,8 @@ WHERE ppro.ReorderPoint >= 750
 SELECT *
 FROM Person.[Address] as pad
 WHERE pad.City LIKE '%Fort%'
+
+-- exercise 07: return products with value in column "StandardCost" is smaller 10
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.StandardCost < 10
