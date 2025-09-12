@@ -22,3 +22,9 @@ WHERE ppro.SafetyStockLevel < 500
 SELECT *
 FROM Sales.SalesTerritory as ssa
 WHERE ssa.[Group] = 'North America'
+
+--exercise 04: return products with value "makeFlag" = 1
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.MakeFlag = 1
+
