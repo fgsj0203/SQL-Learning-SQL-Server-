@@ -77,3 +77,8 @@ WHERE sc.[Name] NOT LIKE 'U%'
 SELECT *
 FROM Sales.SalesOrderHeader as ssa
 WHERE (ssa.SalesOrderID % 2 = 0)
+
+-- exercise 15: Return product is smaller value
+SELECT TOP 1 *
+FROM Production.Product as ppro
+ORDER BY ppro.ListPrice ASC
