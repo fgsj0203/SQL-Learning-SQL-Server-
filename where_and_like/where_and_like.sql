@@ -92,3 +92,8 @@ WHERE ppro.ListPrice between 100 and 300 and (ppro.Color = 'Red')
 SELECT *
 FROM Sales.SalesOrderHeader as ssa
 WHERE ssa.Status = 5
+
+-- exercise 18: return names of products of contain 2 letters "a"
+SELECT *
+FROM Production.Product as ppro
+WHERE ppro.Name LIKE '%a%a%'
