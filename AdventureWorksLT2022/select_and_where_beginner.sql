@@ -56,3 +56,8 @@ WHERE sp.ListPrice < 50
 SELECT *
 FROM SalesLT.Product as sp
 WHERE sp.Color IS NULL
+
+-- exercise 07: return all products a color is "black"
+SELECT *
+FROM SalesLT.Product as sp
+WHERE sp.Color = 'Black'
