@@ -26,3 +26,7 @@ WHERE
 -- exercise 01: return name of product and ID Product
 SELECT sp.Name as 'Nome produto', sp.ProductID as 'ID Produto'
 FROM SalesLT.Product as sp
+
+-- exercise 02: return name of clients and ID Customer
+SELECT sc.FirstName + ' ' + sc.LastName as 'Nome completo / Cliente', sc.CustomerID as 'ID do Cliente' 
+FROM SalesLT.Customer as sc
