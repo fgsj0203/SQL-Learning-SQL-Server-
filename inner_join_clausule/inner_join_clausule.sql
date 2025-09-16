@@ -17,7 +17,7 @@ SELECT
 FROM
     INFORMATION_SCHEMA.COLUMNS
 WHERE
-    COLUMN_NAME = 'ProductSubCategoryID'
+    COLUMN_NAME = 'SalesOrderID'
 -------------------------------------------------
 
 
@@ -28,3 +28,9 @@ FROM Person.Person as ppe INNER JOIN Sales.Customer as sc ON ppe.BusinessEntityI
 -- exercise 02: return name of product and name of subcategory
 SELECT ppro.Name as 'Nome do produto', pprod.Name as 'Nome categoria'
 FROM Production.Product as ppro INNER JOIN Production.ProductSubcategory as pprod ON ppro.ProductSubcategoryID = pprod.ProductSubcategoryID
+
+-- exercise 03: return SalesOrderID and OrderDate with name client
+SELECT ppe.FirstName + ' ' + ppe.LastName as 'Nome cliente', ssa.SalesOrderID as 'ID ordem de venda', ssa.OrderDate as 'Data da venda'
+FROM Sales.SalesOrderHeader as ssa INNER JOIN Sales.Customer as sc ON ssa.CustomerID = sc.CustomerID
+INNEr JOIN Person.Person as ppe ON sc.PersonID = ppe.BusinessEntityID
+
