@@ -46,3 +46,8 @@ FROM SalesLT.Product as sp
 SELECT *
 FROM SalesLT.Product as sp
 WHERE sp.ListPrice > 1000
+
+-- exercise 05: return products with price is smaller of value 50
+SELECT *
+FROM SalesLT.Product as sp
+WHERE sp.ListPrice < 50
