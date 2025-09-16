@@ -1,0 +1,39 @@
+Liste nomes e sobrenomes dos clientes junto com seu AccountNumber.
+
+Mostre nome do produto e nome da subcategoria.
+
+Liste ordens (SalesOrderID, OrderDate) junto com o nome do cliente.
+
+Mostre nome do produto e nome da categoria.
+
+Liste ordens e o nome do método de envio.
+
+Mostre todos os produtos e o nome do modelo.
+
+Liste ordens e o nome do vendedor responsável.
+
+Mostre nome do produto e fornecedor.
+
+Liste ordens e a moeda usada.
+
+Mostre nome do funcionário e departamento.
+
+Liste produtos e suas unidades de medida de peso.
+
+Mostre ordens e o território de vendas.
+
+Liste nomes e sobrenomes de clientes e a cidade de seu endereço.
+
+Mostre produtos e quantidade vendida.
+
+Liste ordens com o nome do cartão de crédito usado.
+
+Mostre nomes e sobrenomes dos funcionários e turno.
+
+Liste nome do produto e preço unitário de venda.
+
+Mostre ordens, nome do cliente e nome do método de envio.
+
+Liste produtos vendidos na cor 'Black' e o nome da subcategoria.
+
+Mostre produtos com quantidade vendida maior que 50 unidades.
