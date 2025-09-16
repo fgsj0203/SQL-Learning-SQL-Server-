@@ -17,7 +17,7 @@ SELECT
 FROM
     INFORMATION_SCHEMA.COLUMNS
 WHERE
-    COLUMN_NAME = 'SalesOrderID'
+    COLUMN_NAME = 'Method'
 -------------------------------------------------
 
 
@@ -37,3 +37,7 @@ INNEr JOIN Person.Person as ppe ON sc.PersonID = ppe.BusinessEntityID
 -- exercise 04: return name of product and category product
 SELECT ppro.Name as 'Nome do produto', ppdc.Name as 'Nome categoria'
 FROM Production.Product as ppro INNER JOIN Production.ProductCategory as ppdc ON ppro.ProductID = ppdc.ProductCategoryID
+
+-- exercise 05: return orders and method of send
+SELECT psm.Name as 'Metodo transporte', ssoh.SalesOrderID as 'Ordem de venda'
+FROM Sales.SalesOrderHeader as ssoh INNER JOIN Purchasing.ShipMethod as psm ON ssoh.ShipMethodID = psm.ShipMethodID
