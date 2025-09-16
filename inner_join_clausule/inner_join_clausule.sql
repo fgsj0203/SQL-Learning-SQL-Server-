@@ -41,3 +41,7 @@ FROM Production.Product as ppro INNER JOIN Production.ProductCategory as ppdc ON
 -- exercise 05: return orders and method of send
 SELECT psm.Name as 'Metodo transporte', ssoh.SalesOrderID as 'Ordem de venda'
 FROM Sales.SalesOrderHeader as ssoh INNER JOIN Purchasing.ShipMethod as psm ON ssoh.ShipMethodID = psm.ShipMethodID
+
+-- exercise 06: return name of all products and name of model product
+SELECT pp.Name as 'Nome do produto', ppm.Name as 'Categoria'
+FROM Production.Product as pp INNER JOIN Production.ProductModel as ppm ON pp.ProductModelID = ppm.ProductModelID
