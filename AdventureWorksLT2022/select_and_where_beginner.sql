@@ -23,3 +23,6 @@ WHERE
     COLUMN_NAME = 'Amount'
 -------------------------------------------------
 
+-- exercise 01: return name of product and ID Product
+SELECT sp.Name as 'Nome produto', sp.ProductID as 'ID Produto'
+FROM SalesLT.Product as sp
