@@ -34,3 +34,6 @@ SELECT ppe.FirstName + ' ' + ppe.LastName as 'Nome cliente', ssa.SalesOrderID as
 FROM Sales.SalesOrderHeader as ssa INNER JOIN Sales.Customer as sc ON ssa.CustomerID = sc.CustomerID
 INNEr JOIN Person.Person as ppe ON sc.PersonID = ppe.BusinessEntityID
 
+-- exercise 04: return name of product and category product
+SELECT ppro.Name as 'Nome do produto', ppdc.Name as 'Nome categoria'
+FROM Production.Product as ppro INNER JOIN Production.ProductCategory as ppdc ON ppro.ProductID = ppdc.ProductCategoryID
