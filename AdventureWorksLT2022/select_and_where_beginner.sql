@@ -41,3 +41,8 @@ SELECT sp.[Name] as 'Nome do Produto', sp.ListPrice as 'Preco original', ROUND(s
 FROM SalesLT.Product as sp
 
 ---------------------------------------------------
+
+-- exercise 04: return names of product is bigger 1000
+SELECT *
+FROM SalesLT.Product as sp
+WHERE sp.ListPrice > 1000
