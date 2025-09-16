@@ -30,3 +30,14 @@ FROM SalesLT.Product as sp
 -- exercise 02: return name of clients and ID Customer
 SELECT sc.FirstName + ' ' + sc.LastName as 'Nome completo / Cliente', sc.CustomerID as 'ID do Cliente' 
 FROM SalesLT.Customer as sc
+
+---------------------------------------------------
+-- exercise 03: return name and price of product
+SELECT sp.[Name] as 'Nome do Produto', sp.ListPrice as 'Preco do produto'
+FROM SalesLT.Product as sp
+
+-- Updating exercise 03 = round value of price a next decimal number
+SELECT sp.[Name] as 'Nome do Produto', sp.ListPrice as 'Preco original', ROUND(sp.ListPrice,0) as 'Valor do produto / arredondado'
+FROM SalesLT.Product as sp
+
+---------------------------------------------------
