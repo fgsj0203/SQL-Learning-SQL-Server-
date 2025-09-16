@@ -51,3 +51,8 @@ WHERE sp.ListPrice > 1000
 SELECT *
 FROM SalesLT.Product as sp
 WHERE sp.ListPrice < 50
+
+-- exercise 06: return all products with column name color is null
+SELECT *
+FROM SalesLT.Product as sp
+WHERE sp.Color IS NULL
