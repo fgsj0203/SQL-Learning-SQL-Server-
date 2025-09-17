@@ -126,3 +126,7 @@ WHERE YEAR(sp.SellStartDate) = 2013
 SELECT *
 FROM SalesLT.Customer as sc
 WHERE sc.CompanyName IS NULL
+
+-- exercise 20: return all Countries and regions distincts
+SELECT DISTINCT sa.CountryRegion as 'Pais/Regiao'
+FROM SalesLT.[Address] as sa
