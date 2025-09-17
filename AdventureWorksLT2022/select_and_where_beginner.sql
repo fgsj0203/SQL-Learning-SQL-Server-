@@ -67,3 +67,8 @@ WHERE sp.Color = 'Black'
 SELECT sc.FirstName + ' ' + sc.MiddleName as 'Nome completo', sc.CompanyName as 'Nome empresa'
 FROM SalesLT.Customer as sc
 WHERE sc.CompanyName LIKE 'A%'
+
+-- exercise 09: return all clients with name started a word "Bike"
+SELECT *
+FROM SalesLT.Customer as sc
+WHERE sc.CompanyName LIKE '%Bike%'
