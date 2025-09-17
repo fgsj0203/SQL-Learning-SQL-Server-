@@ -28,3 +28,8 @@ ORDER BY sc.CustomerID ASC
 SELECT sp.[Name] as 'Nome produto'
 FROM SalesLT.[Product] as sp
 ORDER BY sp.[Name] ASC
+
+-- exercise 05: Return all products of listPrice in order decrescent
+SELECT *
+FROM SalesLT.[Product] as sp
+ORDER BY sp.ListPrice DESC
