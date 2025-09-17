@@ -117,3 +117,7 @@ SELECT *
 FROM SalesLT.Customer as sc
 WHERE LEN(sc.CompanyName) > 15
 
+-- exercise 18: return products with value column SellStartDate start in year 2013
+SELECT *
+FROM SalesLT.[Product] as sp
+WHERE YEAR(sp.SellStartDate) = 2013
