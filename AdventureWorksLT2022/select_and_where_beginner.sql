@@ -91,3 +91,8 @@ WHERE sa.City = 'Seattle'
 -- exercise 12: return all cities and states differents in column Address
 SELECT DISTINCT sa.City as 'Cidade', sa.StateProvince as 'Estados/Provincia'
 FROM SalesLT.[Address] as sa
+
+-- exercise 13: return name of products with value equal 500
+SELECT *
+FROM SalesLT.[Product] as sp
+WHERE sp.ListPrice = 500
