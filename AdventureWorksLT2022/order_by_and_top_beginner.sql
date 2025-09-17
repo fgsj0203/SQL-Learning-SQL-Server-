@@ -18,3 +18,8 @@ ORDER BY sp.ListPrice DESC
 SELECT TOP 10 sp.[Name] as 'Nome produto', sp.ListPrice as 'Preco produto'
 FROM SalesLT.[Product] as sp
 ORDER BY sp.ListPrice ASC
+
+-- exercise 03: return 5 clients with value smaller of column "CustomerID"
+SELECT TOP 5 *
+FROM SalesLT.Customer as sc
+ORDER BY sc.CustomerID ASC
