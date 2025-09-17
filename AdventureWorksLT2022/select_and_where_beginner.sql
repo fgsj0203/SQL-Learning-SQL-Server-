@@ -96,3 +96,8 @@ FROM SalesLT.[Address] as sa
 SELECT *
 FROM SalesLT.[Product] as sp
 WHERE sp.ListPrice = 500
+
+-- exercise 14: return all products is weight value bigger 10
+SELECT *
+FROM SalesLT.[Product] as sp
+WHERE sp.Weight > 10
