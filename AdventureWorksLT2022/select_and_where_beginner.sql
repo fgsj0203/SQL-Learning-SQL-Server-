@@ -111,3 +111,8 @@ WHERE sc.EmailAddress LIKE '%adventure-works.com'
 SELECT *
 FROM SalesLT.[Product] as sp
 WHERE sp.[Name] LIKE '%a%a%'
+
+-- exercise 17: return clients of name company have most 15 characters
+SELECT *
+FROM SalesLT.Customer as sc
+WHERE LEN(sc.CompanyName) > 15
