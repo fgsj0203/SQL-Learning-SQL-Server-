@@ -82,3 +82,8 @@ FROM SalesLT.[Address] as sa
 SELECT *
 FROM SalesLT.[Address] as sa
 ------------------------------------------------------------------------------
+
+-- exercise 11: return all address in city Seattle
+SELECT *
+FROM SalesLT.[Address] as sa
+WHERE sa.City = 'Seattle'
