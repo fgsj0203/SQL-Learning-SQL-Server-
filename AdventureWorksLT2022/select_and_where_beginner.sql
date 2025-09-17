@@ -87,3 +87,7 @@ FROM SalesLT.[Address] as sa
 SELECT *
 FROM SalesLT.[Address] as sa
 WHERE sa.City = 'Seattle'
+
+-- exercise 12: return all cities and states differents in column Address
+SELECT DISTINCT sa.City as 'Cidade', sa.StateProvince as 'Estados/Provincia'
+FROM SalesLT.[Address] as sa
