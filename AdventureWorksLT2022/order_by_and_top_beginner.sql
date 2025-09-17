@@ -10,6 +10,6 @@ Database: AdventureWorksLT2022
 
 
 -- exercise 01: return all 10 products with value is bigger
-SELECT TOP 10 *
+SELECT TOP 10 sp.[Name] as 'Nome produto', sp.ListPrice as 'Preco produto'
 FROM SalesLT.[Product] as sp
 ORDER BY sp.ListPrice DESC
