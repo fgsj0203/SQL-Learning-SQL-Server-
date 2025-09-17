@@ -73,6 +73,12 @@ SELECT *
 FROM SalesLT.Customer as sc
 WHERE sc.CompanyName LIKE '%Bike%'
 
+------------------------------------------------------------------------------
 -- exercise 10: return all address of column AddressLine1
 SELECT sa.AddressLine1 as 'Endereco principal'
 FROM SalesLT.[Address] as sa
+
+-- updating exercise 10: return data of all columns with AddressLine1
+SELECT *
+FROM SalesLT.[Address] as sa
+------------------------------------------------------------------------------
