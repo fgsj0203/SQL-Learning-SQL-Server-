@@ -121,3 +121,8 @@ WHERE LEN(sc.CompanyName) > 15
 SELECT *
 FROM SalesLT.[Product] as sp
 WHERE YEAR(sp.SellStartDate) = 2013
+
+-- exercise 19: return clients with name company is null
+SELECT *
+FROM SalesLT.Customer as sc
+WHERE sc.CompanyName IS NULL
