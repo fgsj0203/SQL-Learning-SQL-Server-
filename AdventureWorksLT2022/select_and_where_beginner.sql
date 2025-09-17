@@ -61,3 +61,9 @@ WHERE sp.Color IS NULL
 SELECT *
 FROM SalesLT.Product as sp
 WHERE sp.Color = 'Black'
+
+
+-- exercise 08: return name of clients in companies started letter "A"
+SELECT sc.FirstName + ' ' + sc.MiddleName as 'Nome completo', sc.CompanyName as 'Nome empresa'
+FROM SalesLT.Customer as sc
+WHERE sc.CompanyName LIKE 'A%'
