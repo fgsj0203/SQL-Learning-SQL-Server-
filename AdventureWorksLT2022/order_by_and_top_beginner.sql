@@ -23,3 +23,8 @@ ORDER BY sp.ListPrice ASC
 SELECT TOP 5 *
 FROM SalesLT.Customer as sc
 ORDER BY sc.CustomerID ASC
+
+-- exercise 04: return all products in order ascendent
+SELECT sp.[Name] as 'Nome produto'
+FROM SalesLT.[Product] as sp
+ORDER BY sp.[Name] ASC
