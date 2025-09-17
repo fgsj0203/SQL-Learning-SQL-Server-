@@ -101,3 +101,8 @@ WHERE sp.ListPrice = 500
 SELECT *
 FROM SalesLT.[Product] as sp
 WHERE sp.Weight > 10
+
+-- exercise 15: return all clients with value of email is "adventure-works.com"
+SELECT *
+FROM SalesLT.Customer as sc
+WHERE sc.EmailAddress LIKE '%adventure-works.com'
