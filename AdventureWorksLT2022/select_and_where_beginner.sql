@@ -116,3 +116,4 @@ WHERE sp.[Name] LIKE '%a%a%'
 SELECT *
 FROM SalesLT.Customer as sc
 WHERE LEN(sc.CompanyName) > 15
+
