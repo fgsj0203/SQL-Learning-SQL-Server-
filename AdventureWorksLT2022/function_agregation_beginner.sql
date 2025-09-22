@@ -27,3 +27,8 @@ FROM SalesLT.[Product] as sp
 -- exercise 05: return a sum of all values prices products
 SELECT SUM(sp.ListPrice) as 'Total da soma dos valores do produtos'
 FROM SalesLT.[Product] as sp
+
+-- exercise 06: return amount of products if color is not null
+SELECT COUNT (sp.ProductID)
+FROM SalesLT.[Product] as sp
+WHERE sp.Color is NOT NULL
