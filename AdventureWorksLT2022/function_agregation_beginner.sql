@@ -46,3 +46,7 @@ SELECT COUNT(sc.CustomerID) as 'Clientes com email valido'
 FROM SalesLT.Customer as sc
 WHERE sc.EmailAddress is NOT NULL
 
+-- exercise 10: return amount address for city
+SELECT sa.City as 'Cidade', COUNT (sa.AddressID) as 'Endereco por cidade'
+FROM SalesLT.[Address] as sa
+GROUP BY sa.City
