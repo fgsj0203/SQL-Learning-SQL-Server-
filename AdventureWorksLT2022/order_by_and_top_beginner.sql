@@ -54,3 +54,8 @@ SELECT TOP 3*
 FROM SalesLT.[Product] as sp
 WHERE sp.Color IS NULL
 ORDER BY sp.ListPrice ASC
+
+-- exercise 10: return 15 products with bigger value ProductID
+SELECT TOP 15 *
+FROM SalesLT.[Product] as sp
+ORDER BY sp.ProductID DESC
