@@ -38,3 +38,8 @@ ORDER BY sp.ListPrice DESC
 SELECT TOP 20 *
 FROM SalesLT.Customer as sc
 ORDER BY sc.CompanyName
+
+-- exercise 07: return address ordered by city and column table "AddressLine1"
+SELECT *
+FROM SalesLT.[Address] as sa
+ORDER BY sa.City, sa.AddressLine1
