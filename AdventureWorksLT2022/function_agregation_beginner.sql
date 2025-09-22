@@ -36,3 +36,7 @@ WHERE sp.Color is NOT NULL
 -- exercise 07: return a average of value weight procuts
 SELECT AVG(sp.[Weight]) as 'Media de peso dos produtos'
 FROM SalesLT.[Product] as sp
+
+-- exercise 08: return product with bigger weight
+SELECT MAX(sp.Weight) as 'Produto mais pesado'
+FROM SalesLT.[Product] as sp
