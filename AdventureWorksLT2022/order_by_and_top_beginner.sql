@@ -33,3 +33,8 @@ ORDER BY sp.[Name] ASC
 SELECT *
 FROM SalesLT.[Product] as sp
 ORDER BY sp.ListPrice DESC
+
+-- exercise 06: return all first 20 clients based in company name
+SELECT TOP 20 *
+FROM SalesLT.Customer as sc
+ORDER BY sc.CompanyName
