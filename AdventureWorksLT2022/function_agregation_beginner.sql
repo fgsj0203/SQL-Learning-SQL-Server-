@@ -55,3 +55,8 @@ GROUP BY sa.City
 SELECT COUNT (sc.CustomerID) as 'Clientes por regiao', sa.CountryRegion as 'Regiao/Pais'
 FROM SalesLT.[Address] as sa INNER JOIN SalesLT.Customer as sc ON sa.AddressID = sc.CustomerID
 GROUP BY sa.CountryRegion
+
+-- exercise 12: return amount products based in color
+SELECT COUNT(sp.ProductID) as 'Qtd Produtos', sp.Color as 'Cor do produto'
+FROM SalesLT.[Product] as sp
+GROUP BY sp.Color
