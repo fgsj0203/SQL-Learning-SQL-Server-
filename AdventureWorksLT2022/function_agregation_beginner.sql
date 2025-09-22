@@ -32,3 +32,7 @@ FROM SalesLT.[Product] as sp
 SELECT COUNT (sp.ProductID)
 FROM SalesLT.[Product] as sp
 WHERE sp.Color is NOT NULL
+
+-- exercise 07: return a average of value weight procuts
+SELECT AVG(sp.[Weight]) as 'Media de peso dos produtos'
+FROM SalesLT.[Product] as sp
