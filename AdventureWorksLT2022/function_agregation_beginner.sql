@@ -40,3 +40,9 @@ FROM SalesLT.[Product] as sp
 -- exercise 08: return product with bigger weight
 SELECT MAX(sp.Weight) as 'Produto mais pesado'
 FROM SalesLT.[Product] as sp
+
+-- exercise 09: return amount clients with email is not null
+SELECT COUNT(sc.CustomerID) as 'Clientes com email valido'
+FROM SalesLT.Customer as sc
+WHERE sc.EmailAddress is NOT NULL
+
