@@ -48,3 +48,9 @@ ORDER BY sa.City, sa.AddressLine1
 SELECT TOP 3 *
 FROM SalesLT.[Product] as sp
 ORDER BY sp.Weight DESC
+
+-- exercise 09: return 3 products with value smaller and color not created
+SELECT TOP 3*
+FROM SalesLT.[Product] as sp
+WHERE sp.Color IS NULL
+ORDER BY sp.ListPrice ASC
