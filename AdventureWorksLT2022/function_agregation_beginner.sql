@@ -60,3 +60,13 @@ GROUP BY sa.CountryRegion
 SELECT COUNT(sp.ProductID) as 'Qtd Produtos', sp.Color as 'Cor do produto'
 FROM SalesLT.[Product] as sp
 GROUP BY sp.Color
+
+-- exercise 13: return average value of products based in color
+SELECT AVG(sp.ListPrice) as 'Preco medio do produto baseado na cor', sp.[Name] as 'Nome produto'
+FROM SalesLT.[Product] as sp
+GROUP BY sp.[Name]
+
+-- exercise 14: return sum of products is color 'Red'
+SELECT SUM (sp.ListPrice) as 'Soma de todos os produtos vermelhos'
+FROM SalesLT.[Product] as sp
+WHERE sp.Color = 'red'
