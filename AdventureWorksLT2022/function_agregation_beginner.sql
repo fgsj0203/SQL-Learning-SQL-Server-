@@ -15,3 +15,7 @@ FROM SalesLT.[Product] as sp
 -- exercise 02: return a amount clients in table/database
 SELECT COUNT (sc.CustomerID) as 'Total clientes'
 FROM SalesLT.Customer as sc
+
+-- exercise 03: return of average price products
+SELECT AVG(sp.ListPrice) as 'Preco medio dos produtos'
+FROM SalesLT.[Product] as sp
