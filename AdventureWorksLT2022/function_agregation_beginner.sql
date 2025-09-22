@@ -70,3 +70,7 @@ GROUP BY sp.[Name]
 SELECT SUM (sp.ListPrice) as 'Soma de todos os produtos vermelhos'
 FROM SalesLT.[Product] as sp
 WHERE sp.Color = 'red'
+
+-- exercise 15: return amount of orders 
+SELECT COUNT(ssoh.AccountNumber) as 'Total de pedidos'
+FROM SalesLT.SalesOrderHeader as ssoh
