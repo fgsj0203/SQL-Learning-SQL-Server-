@@ -19,3 +19,7 @@ FROM SalesLT.Customer as sc
 -- exercise 03: return of average price products
 SELECT AVG(sp.ListPrice) as 'Preco medio dos produtos'
 FROM SalesLT.[Product] as sp
+
+-- exercise 04: return a price max and price min of products
+SELECT MAX(sp.ListPrice) as 'Maior preco', MIN(sp.ListPrice) as 'Menor preco'
+FROM SalesLT.[Product] as sp
