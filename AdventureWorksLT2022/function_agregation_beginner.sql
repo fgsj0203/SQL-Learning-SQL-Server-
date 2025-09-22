@@ -50,3 +50,8 @@ WHERE sc.EmailAddress is NOT NULL
 SELECT sa.City as 'Cidade', COUNT (sa.AddressID) as 'Endereco por cidade'
 FROM SalesLT.[Address] as sa
 GROUP BY sa.City
+
+-- exercise 11: return amount clients for country region
+SELECT COUNT (sc.CustomerID) as 'Clientes por regiao', sa.CountryRegion as 'Regiao/Pais'
+FROM SalesLT.[Address] as sa INNER JOIN SalesLT.Customer as sc ON sa.AddressID = sc.CustomerID
+GROUP BY sa.CountryRegion
