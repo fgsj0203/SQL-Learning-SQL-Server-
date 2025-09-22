@@ -8,6 +8,10 @@ Description: file with exercises beginner of agregation function (COUNT, AVG, MA
 Database: AdventureWorksLT2022
 */
 
--- exercise 01: return a amount products in table
+-- exercise 01: return a amount products in table/database
 SELECT COUNT (sp.ProductID) as 'Total produtos'
 FROM SalesLT.[Product] as sp
+
+-- exercise 02: return a amount clients in table/database
+SELECT COUNT (sc.CustomerID) as 'Total clientes'
+FROM SalesLT.Customer as sc
