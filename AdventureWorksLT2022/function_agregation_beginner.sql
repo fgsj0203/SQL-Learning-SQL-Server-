@@ -23,3 +23,7 @@ FROM SalesLT.[Product] as sp
 -- exercise 04: return a price max and price min of products
 SELECT MAX(sp.ListPrice) as 'Maior preco', MIN(sp.ListPrice) as 'Menor preco'
 FROM SalesLT.[Product] as sp
+
+-- exercise 05: return a sum of all values prices products
+SELECT SUM(sp.ListPrice) as 'Total da soma dos valores do produtos'
+FROM SalesLT.[Product] as sp
