@@ -43,3 +43,8 @@ ORDER BY sc.CompanyName
 SELECT *
 FROM SalesLT.[Address] as sa
 ORDER BY sa.City, sa.AddressLine1
+
+-- exercise 08: return TOP 3 products with bigger value of column "Weight"
+SELECT TOP 3 *
+FROM SalesLT.[Product] as sp
+ORDER BY sp.Weight DESC
