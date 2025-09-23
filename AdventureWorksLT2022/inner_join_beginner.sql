@@ -25,3 +25,8 @@ FROM SalesLT.SalesOrderHeader as ssoh INNER JOIN SalesLT.Customer as sc ON ssoh.
 SELECT ssoh.SalesOrderID as 'ID ordem de venda', sa.City as 'Cidade do cliente'
 FROM SalesLT.Customer as sc INNER JOIN SalesLT.SalesOrderHeader as ssoh ON sc.CustomerID = ssoh.CustomerID
 INNER JOIN SalesLT.[Address] as sa ON sa.AddressID = ssoh.ShipToAddressID
+
+-- exercise 05: return name of product sales in orders 
+SELECT sp.[Name] as 'Nome do produto', ssod.SalesOrderID as 'ID ordem de venda'
+FROM SalesLT.[Product] as sp INNER JOIN SalesLT.SalesOrderDetail as ssod 
+ON ssod.ProductID = sp.ProductID
