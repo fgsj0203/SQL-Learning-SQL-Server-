@@ -16,3 +16,7 @@ FROM SalesLT.[Product] as sp INNER JOIN SalesLT.ProductCategory as spc ON sp.Pro
 SELECT sc.FirstName + ' ' + sc.LastName as 'Nome cliente', ssoh.SalesOrderID as 'ID de venda'
 FROM SalesLT.Customer as sc INNER JOIN SalesLT.SalesOrderHeader as ssoh 
 ON sc.CustomerID = ssoh.CustomerID
+
+-- exercise 03: return a list of orders and name company of client
+SELECT ssoh.SalesOrderID as 'ID de ordem da venda', sc.CompanyName as 'Nome da empresa'
+FROM SalesLT.SalesOrderHeader as ssoh INNER JOIN SalesLT.Customer as sc ON ssoh.CustomerID = sc.CustomerID
