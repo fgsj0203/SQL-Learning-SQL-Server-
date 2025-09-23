@@ -11,3 +11,8 @@ Database: AdventureWorksLT2022
 -- exercise 01:return name products and name of subcategory 
 SELECT sp.[Name] as 'Nome produto', spc.[Name] as 'Nome Categoria'
 FROM SalesLT.[Product] as sp INNER JOIN SalesLT.ProductCategory as spc ON sp.ProductCategoryID = spc.ProductCategoryID
+
+-- exercise 02: return name clients with data of column "SalesOrderID" 
+SELECT sc.FirstName + ' ' + sc.LastName as 'Nome cliente', ssoh.SalesOrderID as 'ID de venda'
+FROM SalesLT.Customer as sc INNER JOIN SalesLT.SalesOrderHeader as ssoh 
+ON sc.CustomerID = ssoh.CustomerID
