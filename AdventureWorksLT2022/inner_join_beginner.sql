@@ -31,7 +31,7 @@ SELECT sp.[Name] as 'Nome do produto', ssod.SalesOrderID as 'ID ordem de venda'
 FROM SalesLT.[Product] as sp INNER JOIN SalesLT.SalesOrderDetail as ssod 
 ON ssod.ProductID = sp.ProductID
 
--- exercise 06: return name of product and amount sale in order
+-- exercise 06: return ID sales, Order date and name of client
 SELECT ssod.SalesOrderID as 'ID de venda', ssoh.OrderDate as 'Data da venda', sc.FirstName + ' ' +sc.LastName as 'Nome cliente'
 FROM SalesLT.SalesOrderDetail as ssod INNER JOIN SalesLT.SalesOrderHeader as ssoh ON ssoh.SalesOrderID = ssoh.SalesOrderID
 INNER JOIN SalesLT.Customer as sc ON sc.CustomerID = ssoh.CustomerID
