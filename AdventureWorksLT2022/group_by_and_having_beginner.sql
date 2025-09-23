@@ -17,3 +17,19 @@ GROUP BY sp.Color
 SELECT sp.ProductCategoryID as 'ID categoria/Produto', COUNT(sp.ProductID) as 'Qtd produto por categoria'
 FROM SalesLT.[Product] as sp
 GROUP BY sp.ProductCategoryID
+
+-- exercise 03: return average prices for ProductCategoryID
+SELECT sp.ProductCategoryID as 'ID categoria do produto', AVG(sp.ListPrice) as 'Media preco por ID'
+FROM SalesLT.[Product] as sp
+GROUP BY sp.ProductCategoryID
+
+-- exercise 04: return only category with most 10 products
+SELECT spc.[Name] as 'Categoria do produto', COUNT(sp.ProductID) as 'Product amount'
+FROM SalesLT.[Product] as sp INNER JOIN SalesLT.ProductCategory as spc ON sp.ProductCategoryID = spc.ProductCategoryID
+GROUP BY spc.Name
+HAVING COUNT(sp.ProductID) > 10
+
+/*
+Description: file in development...
+Last date: 23/09/2025 - in format Brazil
+*/
