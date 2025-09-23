@@ -35,3 +35,8 @@ ON ssod.ProductID = sp.ProductID
 SELECT ssod.SalesOrderID as 'ID de venda', ssoh.OrderDate as 'Data da venda', sc.FirstName + ' ' +sc.LastName as 'Nome cliente'
 FROM SalesLT.SalesOrderDetail as ssod INNER JOIN SalesLT.SalesOrderHeader as ssoh ON ssoh.SalesOrderID = ssoh.SalesOrderID
 INNER JOIN SalesLT.Customer as sc ON sc.CustomerID = ssoh.CustomerID
+
+-- exercise 07: 
+SELECT ssoh.SalesOrderID as 'ID ordem de venda', ssoh.TotalDue as 'Valor total', sc.FirstName + ' ' + sc.LastName as 'Nome cliente'
+FROM SalesLT.SalesOrderHeader as ssoh INNER JOIN SalesLT.Customer as sc ON ssoh.CustomerID = sc.CustomerID
+ORDER BY ssoh.SalesOrderID DESC
