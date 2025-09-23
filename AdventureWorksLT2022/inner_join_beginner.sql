@@ -20,3 +20,8 @@ ON sc.CustomerID = ssoh.CustomerID
 -- exercise 03: return a list of orders and name company of client
 SELECT ssoh.SalesOrderID as 'ID de ordem da venda', sc.CompanyName as 'Nome da empresa'
 FROM SalesLT.SalesOrderHeader as ssoh INNER JOIN SalesLT.Customer as sc ON ssoh.CustomerID = sc.CustomerID
+
+-- exercise 04: return list of orders "SalesOrderID" and city of client
+SELECT ssoh.SalesOrderID as 'ID ordem de venda', sa.City as 'Cidade do cliente'
+FROM SalesLT.Customer as sc INNER JOIN SalesLT.SalesOrderHeader as ssoh ON sc.CustomerID = ssoh.CustomerID
+INNER JOIN SalesLT.[Address] as sa ON sa.AddressID = ssoh.ShipToAddressID
