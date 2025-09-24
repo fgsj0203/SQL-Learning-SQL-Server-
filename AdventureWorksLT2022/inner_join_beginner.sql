@@ -41,4 +41,7 @@ SELECT ssoh.SalesOrderID as 'ID ordem de venda', ssoh.TotalDue as 'Valor total',
 FROM SalesLT.SalesOrderHeader as ssoh INNER JOIN SalesLT.Customer as sc ON ssoh.CustomerID = sc.CustomerID
 ORDER BY ssoh.SalesOrderID DESC
 
-
+-- exercise 08: return clients and your address
+SELECT sc.FirstName + ' ' + sc.LastName as 'Nome cliente', sa.AddressLine1 as 'Endereco principal'
+FROM SalesLT.Customer as sc INNER JOIN SalesLT.CustomerAddress as sca ON sc.CustomerID = sca.CustomerID
+INNER JOIN SalesLT.[Address] as sa ON sa.AddressID = sca.AddressID
