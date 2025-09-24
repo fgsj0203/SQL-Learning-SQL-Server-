@@ -66,3 +66,8 @@ from SalesLT.SalesOrderHeader as ssoh INNER JOIN SalesLT.[Address] as sa ON sa.A
 -- exercise 10: return all address of linked clients
 SELECT sc.FirstName + ' ' + sc.LastName as 'Nome completo', sa.AddressLine1 as 'Endereco principal'
 FROM SalesLT.Customer as sc INNER JOIN SalesLT.[Address] as sa ON sc.CustomerID = sa.AddressID
+
+-- exercise 11: return orders sales in 2012 and name of client 
+SELECT *
+FROM SalesLT.Customer as sc INNER JOIN SalesLT.SalesOrderHeader as ssoh ON sc.CustomerID = ssoh.CustomerID
+WHERE YEAR(ssoh.OrderDate) = 2012
