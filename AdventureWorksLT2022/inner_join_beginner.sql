@@ -62,3 +62,7 @@ INNER JOIN SalesLT.[Address] as sa ON sa.AddressID = sca.AddressID
 -- exercise 09: return orders and address payment
 select ssoh.SalesOrderID as 'ID da venda', sa.AddressLine1 as 'Endereco principal', sa.City as 'Cidade'
 from SalesLT.SalesOrderHeader as ssoh INNER JOIN SalesLT.[Address] as sa ON sa.AddressID = ssoh.BillToAddressID
+
+-- exercise 10: return all address of linked clients
+SELECT sc.FirstName + ' ' + sc.LastName as 'Nome completo', sa.AddressLine1 as 'Endereco principal'
+FROM SalesLT.Customer as sc INNER JOIN SalesLT.[Address] as sa ON sc.CustomerID = sa.AddressID
