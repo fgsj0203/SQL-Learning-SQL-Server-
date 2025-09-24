@@ -44,3 +44,4 @@ WHERE sp.ListPrice >
                     (SELECT TOP 1 sp.ListPrice
                     FROM SalesLT.[Product] as sp
                     WHERE sp.Color = 'Red')
+
