@@ -36,3 +36,11 @@ FROM SalesLT.SalesOrderHeader as ssoh
 WHERE ssoh.TotalDue > 
                     (select AVG(ssoh.TotalDue)
                     FROM SalesLT.SalesOrderHeader as ssoh)
+
+-- exercise 03: return all products with value is bigger of product with bigger value and color is red
+SELECT *
+FROM SalesLT.[Product] as sp
+WHERE sp.ListPrice > 
+                    (SELECT TOP 1 sp.ListPrice
+                    FROM SalesLT.[Product] as sp
+                    WHERE sp.Color = 'Red')
