@@ -8,6 +8,19 @@ Description: file with exercises beginner of INNER JOIN beginner
 Database: AdventureWorksLT2022
 */
 
+-- Script for search column directly in tables
+SELECT
+    TABLE_NAME,
+    COLUMN_NAME,
+    DATA_TYPE,
+    CHARACTER_MAXIMUM_LENGTH
+FROM
+    INFORMATION_SCHEMA.COLUMNS
+WHERE
+    COLUMN_NAME = 'BillToAddressID'
+
+-----------------------------------------------------------
+
 -- exercise 01:return name products and name of subcategory 
 SELECT sp.[Name] as 'Nome produto', spc.[Name] as 'Nome Categoria'
 FROM SalesLT.[Product] as sp INNER JOIN SalesLT.ProductCategory as spc ON sp.ProductCategoryID = spc.ProductCategoryID
@@ -45,3 +58,13 @@ ORDER BY ssoh.SalesOrderID DESC
 SELECT sc.FirstName + ' ' + sc.LastName as 'Nome cliente', sa.AddressLine1 as 'Endereco principal'
 FROM SalesLT.Customer as sc INNER JOIN SalesLT.CustomerAddress as sca ON sc.CustomerID = sca.CustomerID
 INNER JOIN SalesLT.[Address] as sa ON sa.AddressID = sca.AddressID
+
+-- exercise 09: return orders and address payment
+SELECT *
+FROM SalesLT.SalesOrderHeader as ssoh INNER JOIN SalesLT.[Address] as sa ON ssoh.BillToAddressID = sa.id
+
+
+
+
+
+
