@@ -32,3 +32,7 @@ FROM SalesLT.Customer as sc
 -- exercise 03: return name of clients in lower case
 SELECT LOWER(sc.FirstName) + ' ' + LOWER(sc.LastName) as 'Nome completo - minusculo'
 FROM SalesLT.Customer as sc
+
+-- exercise 04: return a first 10 characters of name products
+SELECT LEFT(sp.[Name],10) as 'Primeiros 10 caracteres do produto'
+FROM SalesLT.[Product] as sp
