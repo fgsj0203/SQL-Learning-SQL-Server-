@@ -65,3 +65,11 @@ WHERE YEAR(sp.ModifiedDate) >= 2014
 SELECT *
 FROM SalesLT.[SalesOrderHeader] as ssoh
 WHERE MONTH(ssoh.OrderDate) = 1
+
+-- exercise 11: return orders of year 2013
+SELECT *
+FROM SalesLT.[SalesOrderHeader] as ssoh
+WHERE MONTH(ssoh.OrderDate) = 2013
+
+
+
