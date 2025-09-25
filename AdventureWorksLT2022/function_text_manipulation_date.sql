@@ -60,3 +60,8 @@ WHERE sp.[Name] LIKE '%Road'
 SELECT *
 FROM SalesLT.[Product] as sp
 WHERE YEAR(sp.ModifiedDate) >= 2014
+
+-- exercise 10: return orders launched in january of any year
+SELECT *
+FROM SalesLT.[SalesOrderHeader] as ssoh
+WHERE MONTH(ssoh.OrderDate) = 1
