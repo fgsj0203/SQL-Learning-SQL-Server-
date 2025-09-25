@@ -36,3 +36,7 @@ FROM SalesLT.Customer as sc
 -- exercise 04: return a first 10 characters of name products
 SELECT LEFT(sp.[Name],10) as 'Primeiros 10 caracteres do produto'
 FROM SalesLT.[Product] as sp
+
+-- exercise 05: return size name of products
+SELECT sp.[Name] as 'Nome do produto', LEN(sp.[Name]) as 'Tamanho do nome dos produtos'
+FROM SalesLT.[Product] as sp
