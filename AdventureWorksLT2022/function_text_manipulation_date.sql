@@ -50,3 +50,8 @@ WHERE LEN(sc.CompanyName) > 20
 SELECT *
 FROM SalesLT.[Product] as sp
 WHERE sp.[Name] LIKE '%Bike'
+
+-- exercise 08: return products of name finalized in "Road"
+SELECT *
+FROM SalesLT.[Product] as sp
+WHERE sp.[Name] LIKE '%Road'
