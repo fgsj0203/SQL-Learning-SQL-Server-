@@ -40,3 +40,8 @@ FROM SalesLT.[Product] as sp
 -- exercise 05: return size name of products
 SELECT sp.[Name] as 'Nome do produto', LEN(sp.[Name]) as 'Tamanho do nome dos produtos'
 FROM SalesLT.[Product] as sp
+
+-- exercise 06: return clients if name of company is bigger (20 characters)
+SELECT sc.CustomerID as 'ID do cliente', sc.FirstName + ' ' + sc.LastName as 'Nome cliente', sc.CompanyName as 'Nome da empresa'
+FROM SalesLT.Customer as sc
+WHERE LEN(sc.CompanyName) > 20
