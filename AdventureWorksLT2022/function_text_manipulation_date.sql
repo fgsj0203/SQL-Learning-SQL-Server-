@@ -45,3 +45,8 @@ FROM SalesLT.[Product] as sp
 SELECT sc.CustomerID as 'ID do cliente', sc.FirstName + ' ' + sc.LastName as 'Nome cliente', sc.CompanyName as 'Nome da empresa'
 FROM SalesLT.Customer as sc
 WHERE LEN(sc.CompanyName) > 20
+
+-- exercise 07: return product if name finalized in "Bike"
+SELECT *
+FROM SalesLT.[Product] as sp
+WHERE sp.[Name] LIKE '%Bike'
