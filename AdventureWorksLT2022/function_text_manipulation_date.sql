@@ -28,3 +28,7 @@ FROM SalesLT.Customer as sc
 -- exercise 02: return name of clients in upper case
 SELECT UPPER(sc.FirstName) + ' ' + UPPER(sc.LastName) as 'Nome completo - maiusculo' 
 FROM SalesLT.Customer as sc
+
+-- exercise 03: return name of clients in lower case
+SELECT LOWER(sc.FirstName) + ' ' + LOWER(sc.LastName) as 'Nome completo - minusculo'
+FROM SalesLT.Customer as sc
