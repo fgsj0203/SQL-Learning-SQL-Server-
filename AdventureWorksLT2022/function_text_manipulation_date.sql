@@ -55,3 +55,8 @@ WHERE sp.[Name] LIKE '%Bike'
 SELECT *
 FROM SalesLT.[Product] as sp
 WHERE sp.[Name] LIKE '%Road'
+
+-- exercise 09: return products of release from 2014
+SELECT *
+FROM SalesLT.[Product] as sp
+WHERE YEAR(sp.ModifiedDate) >= 2014
