@@ -24,3 +24,7 @@ WHERE
 -- exercise 01: return fullname 
 SELECT sc.FirstName + ' ' + sc.LastName as 'Nome completo'
 FROM SalesLT.Customer as sc
+
+-- exercise 02: return name of clients in upper case
+SELECT UPPER(sc.FirstName) + ' ' + UPPER(sc.LastName) as 'Nome completo - maiusculo' 
+FROM SalesLT.Customer as sc
