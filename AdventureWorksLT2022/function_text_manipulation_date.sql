@@ -71,5 +71,8 @@ SELECT *
 FROM SalesLT.[SalesOrderHeader] as ssoh
 WHERE MONTH(ssoh.OrderDate) = 2013
 
-
+-- exercise 12: return difference of days in between OrderDate and ShipDate
+SELECT DATEDIFF(DAY, ssoh.OrderDate,ssoh.ShipDate) as 'Diferenca entre dias'
+FROM SalesLT.[SalesOrderHeader] as ssoh
+WHERE ssoh.ShipDate is NOT NULL
 
